@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sundha Holidays - tour packages, flight, hotel, bus, car rental and visa assistance.">
+<title>Sundha Holidays | Your Journey, Our Care</title>
+<style>
+:root{--navy:#071b3a;--blue:#0d3970;--gold:#f4b942;--cream:#fffaf0;--ink:#17243a;--muted:#64748b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f6f8fc;line-height:1.55}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{background:rgba(7,27,58,.97);color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 5px 20px #071b3a25}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}.brand img{width:58px;height:58px;object-fit:contain;background:#fff;border-radius:14px;padding:3px}.brand small{display:block;color:#f7cc72;font-size:11px;font-weight:500;letter-spacing:1px}.links{display:flex;gap:22px;align-items:center;font-size:14px}.links a:hover{color:var(--gold)}.navbtn,.btn{display:inline-block;background:var(--gold);color:#17243a;padding:11px 18px;border-radius:30px;font-weight:800;border:0;cursor:pointer}
+.hero{background:linear-gradient(115deg,#061831ee,#0b3b72dd),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff;padding:86px 0 78px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}.eyebrow{color:#ffd77e;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(38px,6vw,65px);line-height:1.04;margin:14px 0}.hero p{font-size:18px;color:#e1eafa;max-width:590px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn.outline{border:1px solid #ffffff90;color:#fff;background:transparent}.hero-card{background:#ffffff12;border:1px solid #ffffff40;border-radius:24px;padding:25px;backdrop-filter:blur(8px)}.hero-card h3{margin:0 0 12px;font-size:22px}.hero-card p{font-size:14px;margin:0;color:#e3edff}
+.trust{background:#fff;box-shadow:0 8px 25px #0b25440c;margin-top:-22px;position:relative;border-radius:18px;padding:18px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center}.trust strong{display:block;color:var(--blue);font-size:15px}.trust span{font-size:12px;color:var(--muted)}
+section{padding:68px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 32px}.section-head .eyebrow{color:#b27a0a}.section-head h2{font-size:clamp(27px,4vw,39px);color:var(--navy);margin:7px 0}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service,.package{background:#fff;border-radius:18px;padding:23px;box-shadow:0 8px 28px #0b25440c;border:1px solid #e8edf5}.service .ico{font-size:28px}.service h3,.package h3{margin:9px 0 5px;color:var(--navy)}.service p,.package p{color:var(--muted);font-size:14px;margin:0}.package{padding:0;overflow:hidden}.package img{width:100%;height:170px;object-fit:cover;display:block}.package .pad{padding:20px}.tag{display:inline-block;background:#fff3d5;color:#855700;border-radius:30px;padding:4px 10px;font-size:11px;font-weight:800;margin-bottom:8px}
+.enquiry{background:linear-gradient(135deg,#071b3a,#10477e);color:#fff}.enquiry .section-head h2{color:#fff}.enquiry .section-head p{color:#d6e3f5}.formbox{background:#fff;color:var(--ink);padding:26px;border-radius:22px;max-width:850px;margin:auto;box-shadow:0 20px 55px #00132e55}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;border:1px solid #d7dfeb;border-radius:10px;padding:13px;font:inherit;background:#fbfcff;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#2874bd}.field.full{grid-column:1/-1}.field textarea{min-height:100px;resize:vertical}.submit{width:100%;margin-top:17px;background:#15965c;color:#fff;padding:15px;border:0;border-radius:12px;font-size:16px;font-weight:800;cursor:pointer}.note{text-align:center;color:#718096;font-size:12px;margin:12px 0 0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-panel{background:#fff;border-radius:22px;padding:28px;box-shadow:0 8px 28px #0b25440c}.about h2{color:var(--navy);font-size:34px;line-height:1.15}.about p{color:var(--muted)}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.ticks span{font-weight:700;color:#164779;font-size:14px}
+.contact{background:#fff}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-card{background:#f5f8fc;border-radius:16px;padding:20px;text-align:center}.contact-card b{display:block;color:var(--navy);margin:5px}
+footer{background:#06152d;color:#d9e5f5;padding:28px 0;text-align:center;font-size:13px}.footer-brand{font-size:20px;font-weight:800;color:#fff}.float{position:fixed;right:18px;bottom:18px;background:#18a85d;color:#fff;padding:14px 18px;border-radius:40px;font-weight:800;box-shadow:0 8px 25px #0003;z-index:20}
+@media(max-width:800px){.links{display:none}.hero-grid,.about{grid-template-columns:1fr}.hero{padding:65px 0}.trust{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}.about h2{font-size:29px}}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.brand img{width:48px;height:48px}.hero-card{padding:20px}.trust{padding:14px}.trust strong{font-size:13px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><img src="logo.jpg" alt="Sundha Holidays logo"><span>SUNDHA HOLIDAYS<small>TRAVEL • EXPLORE • ENJOY</small></span></a>
+<nav class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="navbtn" href="#enquiry">Enquiry Now</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">Your journey, our care</div><h1>Travel More.<br><span style="color:#ffd477">Worry Less.</span></h1>
+<p>Discover beautiful destinations with thoughtfully planned holidays, reliable bookings and friendly travel support.</p>
+<div class="hero-actions"><a class="btn" href="#enquiry">Plan Your Trip →</a><a class="btn outline" href="https://wa.me/919886741855">WhatsApp Us</a></div>
+</div>
+<div class="hero-card"><div class="eyebrow">SUNDHA HOLIDAYS</div><h3>आपका सफर, हमारी जिम्मेदारी!</h3><p>Domestic & international tour packages, family holidays, honeymoon trips and complete travel booking support — all in one place.</p></div>
+</div></section>
+<div class="wrap trust"><div><strong>✈ Flight Booking</strong><span>Individual & group</span></div><div><strong>🏨 Hotel Stays</strong><span>Comfortable stays</span></div><div><strong>🚘 Car Rental</strong><span>Local & outstation</span></div><div><strong>🌍 Tour Packages</strong><span>India & abroad</span></div></div>
+<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we offer</div><h2>All Your Travel Needs, In One Place</h2><p>From the first plan to your return journey, we help make travel easy.</p></div>
+<div class="grid">
+<div class="service"><div class="ico">✈️</div><h3>Flight Booking</h3><p>Domestic, international and group flight reservations.</p></div>
+<div class="service"><div class="ico">🏨</div><h3>Hotel Booking</h3><p>Hotels and stays to suit your comfort and budget.</p></div>
+<div class="service"><div class="ico">🚌</div><h3>Bus Booking</h3><p>Bus tickets and group travel arrangements.</p></div>
+<div class="service"><div class="ico">🚗</div><h3>Car Rental</h3><p>Local sightseeing, airport transfers and outstation cabs.</p></div>
+<div class="service"><div class="ico">🧳</div><h3>Holiday Packages</h3><p>Family, group, honeymoon and customised tour packages.</p></div>
+<div class="service"><div class="ico">🛂</div><h3>Visa Assistance</h3><p>Guidance and assistance with travel documentation.</p></div>
+</div></div></section>
+<section id="packages" style="background:#eef3fa"><div class="wrap"><div class="section-head"><div class="eyebrow">Explore with us</div><h2>Popular Holiday Ideas</h2><p>Tell us your dates and budget — we’ll help you plan a trip that fits.</p></div>
+<div class="grid">
+<div class="package"><img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=900&q=80" alt="Varanasi ghats"><div class="pad"><span class="tag">SPIRITUAL JOURNEY</span><h3>Kashi – Ayodhya – Prayagraj</h3><p>A memorable pilgrimage covering iconic spiritual destinations.</p></div></div>
+<div class="package"><img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=900&q=80" alt="Kerala backwaters"><div class="pad"><span class="tag">NATURE & RELAXATION</span><h3>Kerala Getaway</h3><p>Backwaters, green landscapes and peaceful holiday moments.</p></div></div>
+<div class="package"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80" alt="Tropical beach"><div class="pad"><span class="tag">HONEYMOON & FAMILY</span><h3>Beach & Island Holidays</h3><p>Relaxing escapes and customised experiences for every occasion.</p></div></div>
+</div><div style="text-align:center;margin-top:25px"><a class="btn" href="#enquiry">Ask for a Custom Package</a></div></div></section>
+<section class="enquiry" id="enquiry"><div class="wrap"><div class="section-head"><div class="eyebrow">Let's plan your next trip</div><h2>Send Your Package Enquiry</h2><p>अपनी यात्रा की जानकारी भेजें। हम WhatsApp पर आपसे संपर्क करेंगे।</p></div>
+<div class="formbox"><form id="travelForm"><div class="formgrid">
+<div class="field"><label for="name">Your Name *</label><input id="name" required placeholder="Enter your name"></div>
+<div class="field"><label for="phone">Mobile / WhatsApp Number *</label><input id="phone" required type="tel" placeholder="Your contact number"></div>
+<div class="field"><label for="destination">Where do you want to go? *</label><input id="destination" required placeholder="e.g. Kashmir, Dubai, Kerala"></div>
+<div class="field"><label for="type">Trip Type</label><select id="type"><option>Family Tour</option><option>Honeymoon</option><option>Group Tour</option><option>Pilgrimage</option><option>Corporate / Flight Group</option><option>Other</option></select></div>
+<div class="field"><label for="date">Travel Date</label><input id="date" type="date"></div>
+<div class="field"><label for="people">Number of Travellers</label><select id="people"><option>1</option><option>2</option><option>3–4</option><option>5–8</option><option>9–15</option><option>16+</option></select></div>
+<div class="field"><label for="budget">Approx. Budget per Person</label><select id="budget"><option>Not decided</option><option>Below ₹10,000</option><option>₹10,000–₹25,000</option><option>₹25,000–₹50,000</option><option>₹50,000–₹1,00,000</option><option>Above ₹1,00,000</option></select></div>
+<div class="field"><label for="service">Need help with</label><select id="service"><option>Complete Tour Package</option><option>Flight Booking</option><option>Hotel Booking</option><option>Bus Booking</option><option>Car Rental / Transfer</option><option>Visa Assistance</option></select></div>
+<div class="field full"><label for="message">Additional Requirements</label><textarea id="message" placeholder="Share your preferred places, dates or any special requirements..."></textarea></div>
+</div><button class="submit" type="submit">Send Enquiry on WhatsApp ↗</button><p class="note">Your enquiry opens WhatsApp with your details ready to send. No payment is collected on this form.</p></form></div></div></section>
+<section id="about"><div class="wrap about"><div class="about-panel"><div class="eyebrow" style="color:#b27a0a">Why Sundha Holidays</div><h2>Travel Planning Made Simple</h2><p>At Sundha Holidays, we help you organise your journey with convenient booking support and trip options suited to your needs. Whether it’s a family holiday, a group journey or a quick booking, get in touch and let’s plan it together.</p><div class="ticks"><span>✓ Personalised Packages</span><span>✓ Friendly Support</span><span>✓ Multiple Travel Services</span><span>✓ Budget-based Options</span></div></div><div><div class="eyebrow" style="color:#b27a0a">हमारी सुविधाएँ</div><h2 style="color:#071b3a">हर सफर को बनाएं यादगार</h2><p style="color:#64748b">आपकी जरूरत और बजट के अनुसार यात्रा की योजना बनाने में हमारी टीम आपकी सहायता करेगी। पैकेज की जानकारी और बुकिंग के लिए आज ही संपर्क करें।</p><a class="btn" href="#enquiry">अपनी यात्रा की पूछताछ करें</a></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Get in touch</div><h2>Contact Sundha Holidays</h2><p>We’re happy to help you plan your next journey.</p></div><div class="contact-grid">
+<div class="contact-card">📞<b>Call / WhatsApp</b><a href="tel:+919886741855">+91 98867 41855</a></div>
+<div class="contact-card">📍<b>Visit Us</b><span>Someshwara Puram, Tumkur, Karnataka – 572102</span></div>
+<div class="contact-card">💬<b>Quick Enquiry</b><a href="https://wa.me/919886741855">Chat with us on WhatsApp</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-brand">SUNDHA HOLIDAYS</div><div>Comfortable Travel… Memorable Experience…</div><div style="margin-top:10px">© <span id="year"></span> Sundha Holidays. All rights reserved.</div></div></footer>
+<a class="float" href="https://wa.me/919886741855?text=Hello%20Sundha%20Holidays%2C%20I%20want%20travel%20details." aria-label="Chat on WhatsApp">☘ WhatsApp</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('travelForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim();
+ const msg=`*New Travel Enquiry - Sundha Holidays*%0A%0A*Name:* ${encodeURIComponent(v('name'))}%0A*Mobile:* ${encodeURIComponent(v('phone'))}%0A*Destination:* ${encodeURIComponent(v('destination'))}%0A*Trip Type:* ${encodeURIComponent(v('type'))}%0A*Travel Date:* ${encodeURIComponent(v('date')||'Not decided')}%0A*Travellers:* ${encodeURIComponent(v('people'))}%0A*Budget:* ${encodeURIComponent(v('budget'))}%0A*Service:* ${encodeURIComponent(v('service'))}%0A*Requirements:* ${encodeURIComponent(v('message')||'Not specified')}`;
+ window.open('https://wa.me/919886741855?text='+msg,'_blank');
+});
+</script>
+</body></html>
